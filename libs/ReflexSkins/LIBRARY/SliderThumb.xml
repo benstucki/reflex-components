@@ -1,0 +1,36 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="SliderThumb" itemID="4cab4845-00000453" sourceLibraryItemHRef="Symbol 1" symbolType="graphic" lastModified="1286924827">
+  <timeline>
+    <DOMTimeline name="SliderThumb">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#303030"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#ADBF40"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!205 205[170 240 120 240!120 240[71 240 35 205!35 205[0 169 0 120!0 120[0 70 35 35!35 35[71 0 120 0!120 0[170 0 205 35!205 35[240 70 240 120!240 120[240 169 205 205"/>
+                    <Edge fillStyle1="1" edges="!191 49[220 78 220 120!220 120[220 161 191 191!191 191[163 220 120 220!120 220[79 220 49 191!49 191[20 161 20 120!20 120[20 78 49 49!49 49[79 20 120 20!120 20[163 20 191 49"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

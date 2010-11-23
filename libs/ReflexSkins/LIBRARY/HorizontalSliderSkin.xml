@@ -1,0 +1,50 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HorizontalSliderSkin" itemID="4caf9eb8-000005ee" linkageExportForAS="true" linkageBaseClass="reflex.skins.MovieClipSkin" linkageClassName="HorizontalSliderSkin" sourceLibraryItemHRef="Symbol 1" lastModified="1286924860">
+  <timeline>
+    <DOMTimeline name="HorizontalSliderSkin">
+      <layers>
+        <DOMLayer name="actions" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="thumb" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="SliderThumb" name="thumb" centerPoint3DX="10" centerPoint3DY="10">
+                  <matrix>
+                    <Matrix a="1.66667175292969" d="1.66667175292969"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="6" y="6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="track" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="SliderTrack" name="track" centerPoint3DX="170" centerPoint3DY="7.6">
+                  <matrix>
+                    <Matrix a="1.69999694824219" d="0.0500030517578125" ty="7.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="100" y="2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
