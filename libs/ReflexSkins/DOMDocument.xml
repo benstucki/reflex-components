@@ -1,14 +1,13 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.0 build 489" majorVersion="11" buildNumber="489" rulerVisible="true" pixelSnap="true" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
-     <fonts/>
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 11.0 build 489" majorVersion="11" buildNumber="489" rulerVisible="true" pixelSnap="true" nextSceneIdentifier="3" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <media>
-          <DOMBitmapItem name="Bitmap 2" itemID="4cb4cb13-00000602" sourceLastImported="1286916883" originalCompressionType="lossless" quality="50" href="Bitmap 2" bitmapDataHRef="M 2 1286916883.dat" frameRight="17200" frameBottom="4540"/>
-          <DOMBitmapItem name="reflex_refreshed.png" itemID="4cb4ce3f-0000061e" sourceExternalFilepath=".\LIBRARY\reflex_refreshed.png" sourceLastImported="1284674707" externalFileSize="5590" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="reflex_refreshed.png" bitmapDataHRef="M 1 1286916860.dat" frameRight="4960" frameBottom="1560"/>
+          <DOMBitmapItem name="reflex_refreshed.png" itemID="4cb4ce3f-0000061e" sourceExternalFilepath="./LIBRARY/reflex_refreshed.png" sourceLastImported="1290559610" externalFileSize="5590" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="reflex_refreshed.png" bitmapDataHRef="M 1 1286916860.dat" frameRight="4960" frameBottom="1560"/>
      </media>
      <symbols>
           <Include href="ButtonBackground.xml" loadImmediate="false"/>
           <Include href="ButtonSkin.xml"/>
           <Include href="CheckBoxSkin.xml"/>
           <Include href="Checkmark.xml" loadImmediate="false"/>
+          <Include href="DroidButton.xml"/>
           <Include href="FillShape.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="Gloss.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="HorizontalSliderSkin.xml"/>
@@ -40,17 +39,17 @@
                                                   <Point/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="ButtonSkin" name="" selected="true" centerPoint3DX="64" centerPoint3DY="19">
+                                        <DOMSymbolInstance libraryItemName="ButtonSkin" name="" centerPoint3DX="321" centerPoint3DY="74">
                                              <matrix>
-                                                  <Matrix tx="4" ty="4"/>
+                                                  <Matrix tx="261" ty="59"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="60" y="15"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="HorizontalSliderSkin" name="" centerPoint3DX="91" centerPoint3DY="131">
+                                        <DOMSymbolInstance libraryItemName="HorizontalSliderSkin" name="" centerPoint3DX="346" centerPoint3DY="175">
                                              <matrix>
-                                                  <Matrix tx="6" ty="121"/>
+                                                  <Matrix tx="261" ty="165"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="85" y="10"/>
@@ -62,6 +61,14 @@
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="16" y="16"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="VerticalSliderSkin" name="" selected="true" centerPoint3DX="496" centerPoint3DY="275">
+                                             <matrix>
+                                                  <Matrix tx="486" ty="190"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="10" y="85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -379,8 +386,21 @@
                </swatches>
           </swatchList>
      </extendedSwatchLists>
-     <PrinterSettings/>
+     <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="959" publishTime="1290581407"/>
+          <PublishItem publishSize="4376" publishTime="1290580969"/>
+          <PublishItem publishSize="4385" publishTime="1290580019"/>
+          <PublishItem publishSize="4300" publishTime="1290579517"/>
+          <PublishItem publishSize="4232" publishTime="1290566667"/>
+          <PublishItem publishSize="4234" publishTime="1290566386"/>
+          <PublishItem publishSize="4218" publishTime="1290566258"/>
+          <PublishItem publishSize="4245" publishTime="1290566101"/>
+          <PublishItem publishSize="5065" publishTime="1290565894"/>
+          <PublishItem publishSize="5066" publishTime="1290565746"/>
+          <PublishItem publishSize="4276" publishTime="1290564860"/>
+          <PublishItem publishSize="5073" publishTime="1290564505"/>
+          <PublishItem publishSize="2555" publishTime="1290563720"/>
           <PublishItem publishSize="7174" publishTime="1286925028"/>
           <PublishItem publishSize="7160" publishTime="1286924894"/>
           <PublishItem publishSize="6750" publishTime="1286922339"/>
@@ -388,18 +408,5 @@
           <PublishItem publishSize="6497" publishTime="1286920833"/>
           <PublishItem publishSize="6456" publishTime="1286919996"/>
           <PublishItem publishSize="6454" publishTime="1286919965"/>
-          <PublishItem publishSize="6415" publishTime="1286919791"/>
-          <PublishItem publishSize="6414" publishTime="1286919603"/>
-          <PublishItem publishSize="6415" publishTime="1286919490"/>
-          <PublishItem publishSize="6407" publishTime="1286919401"/>
-          <PublishItem publishSize="11276" publishTime="1286917697"/>
-          <PublishItem publishSize="5320" publishTime="1286916099"/>
-          <PublishItem publishSize="8388" publishTime="1286579132"/>
-          <PublishItem publishSize="9943" publishTime="1286578746" publishDebug="true"/>
-          <PublishItem publishSize="8401" publishTime="1286578176"/>
-          <PublishItem publishSize="8475" publishTime="1286578003"/>
-          <PublishItem publishSize="8464" publishTime="1286577888"/>
-          <PublishItem publishSize="8465" publishTime="1286577756"/>
-          <PublishItem publishSize="8424" publishTime="1286576961"/>
      </publishHistory>
 </DOMDocument>

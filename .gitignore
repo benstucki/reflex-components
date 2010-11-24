@@ -5,3 +5,6 @@
 bin
 docs
 build.properties
+.DS_Store
+libs/ReflexSkins.html
+libs/ReflexSkins.swf

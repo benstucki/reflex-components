@@ -26,8 +26,8 @@ package reflex.components
 			behaviors.addItem(new SelectBehavior(this));
 			Bind.addBinding(this, "skin.label.text", this, "data.label");
 			Bind.addBinding(this, "skin.label.text", this, "data.name");
-			measured.width = 120;
-			measured.height = 30;
+			measured.width = 210;
+			measured.height = 64;
 			percentWidth = 100;
 		}
 		

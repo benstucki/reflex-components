@@ -12,7 +12,7 @@ package reflex.components
 		{
 			super();
 			position = new Position();
-			skin = new StepperGraphic();
+			//skin = new StepperGraphic();
 			behaviors.addItem(new MovieClipSkinBehavior(this));
 			behaviors.addItem(new StepBehavior(this));
 		}

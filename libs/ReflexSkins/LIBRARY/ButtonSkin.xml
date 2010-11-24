@@ -1,56 +1,24 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonSkin" itemID="4cb4c7b3-000005f7" linkageExportForAS="true" linkageBaseClass="reflex.skins.MovieClipSkin" linkageClassName="ButtonSkin" sourceLibraryItemHRef="Symbol 1" lastModified="1286994835" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonSkin" itemID="4cb4c7b3-000005f7" linkageExportForAS="true" linkageBaseClass="reflex.skins.MovieClipSkin" linkageClassName="ButtonSkin" sourceLibraryItemHRef="Symbol 1" lastModified="1290579724" lastUniqueIdentifier="3">
   <timeline>
     <DOMTimeline name="ButtonSkin">
       <layers>
-        <DOMLayer name="actions" color="#9933CC" autoNamed="false">
+        <DOMLayer name="actions" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[import flash.events.Event;
-import flash.display.DisplayObject;
-
-addEventListener("widthChange", onResize, false, 0, true);
-addEventListener("heightChange", onResize, false, 0, true);
-
-function onResize(event:Event):void {
-	var background:DisplayObject = this.getChildByName("background");
-	var foreground:DisplayObject = this.getChildByName("foreground");
-	var label:DisplayObject = this.getChildByName("label");
-	background.width = foreground.width = width;
-	background.height = foreground.height = height;
-	label.width = width;
-	label.y = height/2 - label.height/2;
-}
-
-stop();]]></script>
+                <script><![CDATA[import flash.events.Event;import flash.display.DisplayObject;addEventListener("widthChange", onResize, false, 0, true);addEventListener("heightChange", onResize, false, 0, true);function onResize(event:Event):void {	var background:DisplayObject = this.getChildByName("background");	//var foreground:DisplayObject = this.getChildByName("foreground");	var label:DisplayObject = this.getChildByName("label");	//background.width = foreground.width = width;	//background.height = foreground.height = height;	background.width = width;	background.height = height;	label.width = width;	label.y = height/2 - label.height/2;}stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="gloss" color="#FF800A" autoNamed="false" visible="false">
+        <DOMLayer name="text" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Gloss" name="foreground" selected="true" cacheAsBitmap="true" blendMode="overlay" centerPoint3DX="60" centerPoint3DY="15">
+                <DOMDynamicText name="label" width="236.1" height="27" isSelectable="false">
                   <matrix>
-                    <Matrix a="0.984146118164063" d="0.936447143554688" tx="1" ty="1"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="59.95" y="14.95"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="text" color="#FF800A" autoNamed="false" visible="false">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMDynamicText name="label" width="116" height="20.1" isSelectable="false">
-                  <matrix>
-                    <Matrix tx="2" ty="5"/>
+                    <Matrix a="0.832992553710938" tx="5.65" ty="17.5"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -65,13 +33,13 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="background" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="background" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="ButtonBackground" name="background" selected="true" centerPoint3DX="60" centerPoint3DY="15">
+                <DOMSymbolInstance libraryItemName="DroidButton" name="background" centerPoint3DX="104.05" centerPoint3DY="31">
                   <transformationPoint>
-                    <Point x="60" y="15"/>
+                    <Point x="104.05" y="31"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

@@ -92,8 +92,8 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" edges="!539 99|539 539!539 539|99 539!99 539|99 99!99 99|539 99"/>
                     <Edge fillStyle1="1" edges="!600 40|600 600!600 600|40 600!40 600|40 40!40 40|600 40"/>
+                    <Edge fillStyle0="1" edges="!539 99|539 539!539 539|99 539!99 539|99 99!99 99|539 99"/>
                   </edges>
                 </DOMShape>
               </elements>
