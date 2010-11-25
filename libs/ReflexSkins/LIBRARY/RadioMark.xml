@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="RadioMark" itemID="4cb4e6ef-000007a8" sourceLibraryItemHRef="Symbol 1" scaleGridLeft="6" scaleGridRight="26" scaleGridTop="6" scaleGridBottom="26" lastModified="1286924534">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="RadioMark" itemID="4cb4e6ef-000007a8" sourceLibraryItemHRef="Symbol 1" scaleGridLeft="4.25" scaleGridRight="40.25" scaleGridTop="4.75" scaleGridBottom="40.5" lastModified="1290641456">
   <timeline>
     <DOMTimeline name="RadioMark" currentFrame="2">
       <layers>
@@ -49,22 +49,14 @@
             </DOMFrame>
             <DOMFrame index="2" duration="4" keyMode="9728">
               <elements>
-                <DOMShape>
-                  <fills>
-                    <FillStyle index="1">
-                      <LinearGradient>
-                        <matrix>
-                          <Matrix a="0.010986328125" d="0.010986328125" tx="16" ty="16"/>
-                        </matrix>
-                        <GradientEntry color="#ADBF40" ratio="0"/>
-                        <GradientEntry color="#ADBF40" ratio="1"/>
-                      </LinearGradient>
-                    </FillStyle>
-                  </fills>
-                  <edges>
-                    <Edge fillStyle1="1" edges="!192 447[140 395 140 320!140 320[140 244 192 192!192 192[244 140 320 140!320 140[395 140 447 192!447 192[500 244 500 320!500 320[500 395 447 447!447 447[395 500 320 500!320 500[244 500 192 447"/>
-                  </edges>
-                </DOMShape>
+                <DOMSymbolInstance libraryItemName="RadioButtonGreen" name="" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="7.5" ty="7.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="15" y="15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>
@@ -73,17 +65,11 @@
           <frames>
             <DOMFrame index="0" duration="6" keyMode="9728">
               <elements>
-                <DOMShape>
-                  <fills>
-                    <FillStyle index="1">
-                      <SolidColor color="#333333"/>
-                    </FillStyle>
-                  </fills>
-                  <edges>
-                    <Edge fillStyle1="1" edges="!600 320[600 437 518 518!518 518[437 600 320 600!320 600[203 600 121 518!121 518[40 437 40 320!40 320[40 203 121 121!121 121[203 40 320 40!320 40[437 40 518 121!518 121[600 203 600 320"/>
-                    <Edge fillStyle0="1" edges="!540 320[540 411 476 476!476 476[411 540 320 540!320 540[229 540 165 476!165 476[100 411 100 320!100 320[100 229 165 165!165 165[229 100 320 100!320 100[411 100 476 165!476 165[540 229 540 320"/>
-                  </edges>
-                </DOMShape>
+                <DOMSymbolInstance libraryItemName="RadioButtonBack" name="" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point x="22.5" y="22.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>

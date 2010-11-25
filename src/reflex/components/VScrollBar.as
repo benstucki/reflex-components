@@ -13,10 +13,12 @@ package reflex.components
 		{
 			super();
 			position = new ScrollPosition();
-			//skin = new ScrollBarGraphic();
+			skin = new VerticalSliderSkin();
 			behaviors.addItem(new MovieClipSkinBehavior(this));
 			behaviors.addItem(new StepBehavior(this));
 			behaviors.addItem(new SlideBehavior(this, SlideBehavior.VERTICAL, true));
+			measured.width = 20;
+			measured.height = 170;
 		}
 		
 	}

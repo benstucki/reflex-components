@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="RadioButtonSkin" itemID="4cb4e440-000007a0" linkageExportForAS="true" linkageBaseClass="reflex.skins.MovieClipSkin" linkageClassName="RadioButtonSkin" sourceLibraryItemHRef="Symbol 1" lastModified="1286925004">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="RadioButtonSkin" itemID="4cb4e440-000007a0" linkageExportForAS="true" linkageBaseClass="reflex.skins.MovieClipSkin" linkageClassName="RadioButtonSkin" sourceLibraryItemHRef="Symbol 1" lastModified="1290653840">
   <timeline>
     <DOMTimeline name="RadioButtonSkin">
       <layers>
@@ -6,40 +6,25 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[import flash.events.Event;
-import flash.display.DisplayObject;
-
-addEventListener("widthChange", onResize, false, 0, true);
-addEventListener("heightChange", onResize, false, 0, true);
-
-function onResize(event:Event):void {
-	var radiomark:DisplayObject = this.getChildByName("radiomark");
-	var label:DisplayObject = this.getChildByName("label");
-	radiomark.width = radiomark.height = height;
-	label.x = radiomark.width + 4;
-	label.y = height/2 - label.height/2;
-	label.width = width - 32;
-}
-
-stop();]]></script>
+                <script><![CDATA[import flash.events.Event;import flash.display.DisplayObject;addEventListener("widthChange", onResize, false, 0, true);addEventListener("heightChange", onResize, false, 0, true);//radiomark.mouseChildren = false;//radiomark.mouseEnabled = false;function onResize(event:Event):void {	var radiomark:DisplayObject = this.getChildByName("radiomark");	var label:DisplayObject = this.getChildByName("label");	radiomark.y = height/2 - radiomark.height/2;	label.x = 4;	label.y = height/2 - label.height/2 + 4;	label.width = width - 50;}stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="text" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="text" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="label" width="86" height="20.1" isSelectable="false">
+                <DOMDynamicText name="label" width="156" height="30" isSelectable="false">
                   <matrix>
-                    <Matrix tx="34" ty="6"/>
+                    <Matrix tx="2" ty="10.5"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters></characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="2.35" size="18" bitmapSize="360" face="Arial-BoldMT"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="2.35" size="24" bitmapSize="480" face="ArialMT"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -48,11 +33,14 @@ stop();]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="radiomark" color="#4FFF4F" autoNamed="false">
+        <DOMLayer name="radiomark" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="RadioMark" name="radiomark" centerPoint3DX="15" centerPoint3DY="15">
+                <DOMSymbolInstance libraryItemName="RadioMark" name="radiomark" selected="true" centerPoint3DX="180" centerPoint3DY="15">
+                  <matrix>
+                    <Matrix tx="165"/>
+                  </matrix>
                   <transformationPoint>
                     <Point x="15" y="15"/>
                   </transformationPoint>

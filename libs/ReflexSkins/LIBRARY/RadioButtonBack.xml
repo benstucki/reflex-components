@@ -1,0 +1,52 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="RadioButtonBack" itemID="4ced9f1b-00001304" sourceLibraryItemHRef="Symbol 1" symbolType="graphic" lastModified="1290641179">
+  <timeline>
+    <DOMTimeline name="RadioButtonBack">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0" b="0.0274658203125" c="-0.0274658203125" d="0" tx="22.5" ty="22.5"/>
+                        </matrix>
+                        <GradientEntry color="#E5E5E5" ratio="0"/>
+                        <GradientEntry color="#DADADA" ratio="0.188235294117647"/>
+                        <GradientEntry color="#D0D0D0" ratio="0.486274509803922"/>
+                        <GradientEntry color="#CCCCCC" ratio="0.823529411764706"/>
+                        <GradientEntry color="#FFFFFF" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" caps="none" joints="miter" miterLimit="4">
+                        <fill>
+                          <SolidColor color="#999999"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!132 768S6[0 636 0 450!0 450[0 264 132 131!132 131[264 0 450 0!450 0[636 0 769 131!769 131[900 264 900 450!900 450[900 636 769 768!769 768[636 900 450 900!450 900[264 900 132 768"/>
+                    <Edge cubics="!769 768(;680,856 574,900 450,900q769 768Q636 900q450 900);"/>
+                    <Edge cubics="!900 450(;900,574 856,680 769,768q900 450Q900 636q769 768);"/>
+                    <Edge cubics="!132 768(;44,680 0,574 0,450q132 768Q0 636q0 450);"/>
+                    <Edge cubics="!450 900(;326,900 220,856 132,768q450 900Q264 900q132 768);"/>
+                    <Edge cubics="!450 0(;574,0 680,44 769,131q450 0Q636 0q769 131)769,131;"/>
+                    <Edge cubics="!132 131(;220,44 326,0 450,0q132 131Q264 0q450 0);"/>
+                    <Edge cubics="!769 131(;856,220 900,326 900,450q769 131Q900 264q900 450);"/>
+                    <Edge cubics="!0 450(;0,326 44,220 132,131q0 450Q0 264q132 131);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

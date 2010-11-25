@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonSkin" itemID="4cb4c7b3-000005f7" linkageExportForAS="true" linkageBaseClass="reflex.skins.MovieClipSkin" linkageClassName="ButtonSkin" sourceLibraryItemHRef="Symbol 1" lastModified="1290579724" lastUniqueIdentifier="3">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonSkin" itemID="4cb4c7b3-000005f7" linkageExportForAS="true" linkageBaseClass="reflex.skins.MovieClipSkin" linkageClassName="ButtonSkin" sourceLibraryItemHRef="Symbol 1" lastModified="1290632539" lastUniqueIdentifier="3">
   <timeline>
     <DOMTimeline name="ButtonSkin">
       <layers>
@@ -24,7 +24,7 @@
                     <DOMTextRun>
                       <characters></characters>
                       <textAttrs>
-                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineSpacing="2.35" size="18" bitmapSize="360" face="Arial-BoldMT"/>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineSpacing="2.35" size="24" bitmapSize="480" face="ArialMT"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

@@ -1,0 +1,52 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="CheckBoxBack" itemID="4c228c66-000003be" linkageExportForAS="true" linkageClassName="CheckBoxBack" sourceLibraryItemHRef="Symbol 1" lastModified="1277333127">
+  <timeline>
+    <DOMTimeline name="CheckBoxBack">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0" b="0.0276641845703125" c="0.0276641845703125" d="0" tx="22.5" ty="22.6"/>
+                        </matrix>
+                        <GradientEntry color="#E5E5E5" ratio="0"/>
+                        <GradientEntry color="#DADADA" ratio="0.188235294117647"/>
+                        <GradientEntry color="#D0D0D0" ratio="0.486274509803922"/>
+                        <GradientEntry color="#CCCCCC" ratio="0.823529411764706"/>
+                        <GradientEntry color="#FFFFFF" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" caps="none" joints="miter" miterLimit="4">
+                        <fill>
+                          <SolidColor color="#999999"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!900 840S4[900 865 883 882!883 882[865 900 840 900!840 900|60 900!60 900[35 900 18 882!18 882[0 865 0 840!0 840|0 60!0 60[0 35 18 18!18 18[35 0 60 0!60 0|840 0!840 0[865 0 883 18!883 18[900 35 900 60!900 60|900 840"/>
+                    <Edge cubics="!900 840(;900,873 874,900 840,900q900 840Q900 865q883 882Q865 900q840 900);"/>
+                    <Edge cubics="!840 900(;840,900 60,900 60,900q840 900 60 900);"/>
+                    <Edge cubics="!60 900(;27,900 0,873 0,840q60 900Q35 900q18 882Q0 865q0 840);"/>
+                    <Edge cubics="!0 840(;0,840 0,60 0,60q0 840 0 60);"/>
+                    <Edge cubics="!0 60(;0,27 27,0 60,0q0 60Q0 35q18 18Q35 0q60 0);"/>
+                    <Edge cubics="!60 0(;60,0 840,0 840,0q60 0 840 0);"/>
+                    <Edge cubics="!840 0(;874,0 900,27 900,60q840 0Q865 0q883 18Q900 35q900 60);"/>
+                    <Edge cubics="!900 60(;900,60 900,840 900,840q900 60 900 840);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,45 +1,30 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="CheckBoxSkin" itemID="4cb4dec7-0000066e" linkageExportForAS="true" linkageBaseClass="reflex.skins.MovieClipSkin" linkageClassName="CheckBoxSkin" sourceLibraryItemHRef="Symbol 1" lastModified="1286925011" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="CheckBoxSkin" itemID="4cb4dec7-0000066e" linkageExportForAS="true" linkageBaseClass="reflex.skins.MovieClipSkin" linkageClassName="CheckBoxSkin" sourceLibraryItemHRef="Symbol 1" lastModified="1290653768" lastUniqueIdentifier="2">
   <timeline>
     <DOMTimeline name="CheckBoxSkin">
       <layers>
-        <DOMLayer name="actions" color="#9933CC" autoNamed="false">
+        <DOMLayer name="actions" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[import flash.events.Event;
-import flash.display.DisplayObject;
-
-addEventListener("widthChange", onResize, false, 0, true);
-addEventListener("heightChange", onResize, false, 0, true);
-
-function onResize(event:Event):void {
-	var checkmark:DisplayObject = this.getChildByName("checkmark");
-	var label:DisplayObject = this.getChildByName("label");
-	checkmark.width = checkmark.height = height;
-	label.x = checkmark.width + 4;
-	label.y = height/2 - label.height/2;
-	label.width = width - 32;
-}
-
-stop();]]></script>
+                <script><![CDATA[import flash.events.Event;import flash.display.DisplayObject;addEventListener("widthChange", onResize, false, 0, true);addEventListener("heightChange", onResize, false, 0, true);//checkmark.mouseChildren = false;//checkmark.mouseEnabled = false;function onResize(event:Event):void {	var checkmark:DisplayObject = this.getChildByName("checkmark");	var label:DisplayObject = this.getChildByName("label");	//checkmark.width = checkmark.height = height;	checkmark.y = height/2 - checkmark.height/2;	label.x = 4;	label.y = height/2 - label.height/2 + 4;	label.width = width - 50;}stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="text" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="text" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="label" selected="true" width="104.05" height="20.1" isSelectable="false">
+                <DOMDynamicText name="label" width="188.1" height="30" isSelectable="false">
                   <matrix>
-                    <Matrix a="0.832992553710938" tx="33.65" ty="6"/>
+                    <Matrix a="0.832992553710938" tx="1.65" ty="10.5"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
                       <characters></characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="2.35" size="18" bitmapSize="360" face="Arial-BoldMT"/>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="2.35" size="24" bitmapSize="480" face="ArialMT"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -52,7 +37,10 @@ stop();]]></script>
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Checkmark" name="checkmark" centerPoint3DX="15" centerPoint3DY="15">
+                <DOMSymbolInstance libraryItemName="Checkmark" name="checkmark" centerPoint3DX="180" centerPoint3DY="15">
+                  <matrix>
+                    <Matrix tx="165"/>
+                  </matrix>
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

@@ -1,0 +1,39 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ListItemSkin" itemID="4ceda929-00001880" linkageExportForAS="true" linkageBaseClass="reflex.skins.MovieClipSkin" linkageClassName="ListItemSkin" sourceLibraryItemHRef="Symbol 1" lastModified="1290646128">
+  <timeline>
+    <DOMTimeline name="ListItemSkin">
+      <layers>
+        <DOMLayer name="actions" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[import flash.events.Event;import flash.display.DisplayObject;addEventListener("widthChange", onResize, false, 0, true);addEventListener("heightChange", onResize, false, 0, true);graphics.clear();graphics.lineStyle(1, 0xCCCCCC, 1);graphics.moveTo(0, 65);graphics.lineTo(210, 65);function onResize(event:Event):void {	var label:DisplayObject = this.getChildByName("label");	label.width = width;	label.y = height/2 - label.height/2;	graphics.clear();	graphics.lineStyle(1, 0xCCCCCC, 1);	graphics.moveTo(0, height);	graphics.lineTo(width, height);}stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label" width="206" height="27" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="6" ty="19"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="0" size="24" bitmapSize="480" face="ArialMT"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
