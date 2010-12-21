@@ -8,9 +8,10 @@ package reflex.components
 	public class RadioButton extends ButtonDefinition
 	{
 		
-		public function RadioButton()
+		public function RadioButton(label:String = "")
 		{
 			super();
+			this.label = label;
 			skin = new RadioButtonSkin();
 			behaviors.addItem(new MovieClipSkinBehavior(this));
 			behaviors.addItem(new ButtonBehavior(this));

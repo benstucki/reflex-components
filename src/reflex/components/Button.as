@@ -10,9 +10,10 @@ package reflex.components
 	public class Button extends ButtonDefinition
 	{
 		
-		public function Button()
+		public function Button(label:String = "")
 		{
 			super();
+			this.label = label;
 			skin = new ButtonSkin();
 			behaviors.addItem(new MovieClipSkinBehavior(this));
 			behaviors.addItem(new ButtonBehavior(this));

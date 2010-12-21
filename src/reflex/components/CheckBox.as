@@ -7,9 +7,10 @@ package reflex.components
 
 	public class CheckBox extends ButtonDefinition
 	{
-		public function CheckBox()
+		public function CheckBox(label:String = "")
 		{
 			super();
+			this.label = label;
 			skin = new CheckBoxSkin();
 			behaviors.addItem(new MovieClipSkinBehavior(this));
 			behaviors.addItem(new ButtonBehavior(this));

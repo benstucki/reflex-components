@@ -18,6 +18,9 @@ package reflex.behaviors
 	public class TouchScrollBehavior extends Behavior
 	{
 		
+		[Binding(target="target")]
+		public var hostComponent:DisplayObject;
+		
 		private var point:Point;
 		private var speed:Point;
 		private var drag:Number = 0.95;
@@ -37,39 +40,41 @@ package reflex.behaviors
 		public var horizontalControl:Boolean = true;
 		public var verticalControl:Boolean = true;
 		
-		public function TouchScrollBehavior(target:IEventDispatcher=null)
+		public function TouchScrollBehavior(target:IEventDispatcher=null, horizontalControl:Boolean = true, verticalControl:Boolean = true)
 		{
 			super(target);
+			this.horizontalControl = horizontalControl;
+			this.verticalControl = verticalControl;
 			point = new Point();
 			speed = new Point();
 		}
 		
 		[EventListener(type="mouseDown", target="target")]
 		public function onMouseDown(event:MouseEvent):void {
-			point.x = (target as DisplayObject).mouseX;
-			point.y = (target as DisplayObject).mouseY;
-			(target as DisplayObject).removeEventListener(Event.ENTER_FRAME, animation_enterFrameHandler, false);
-			target.addEventListener(Event.ENTER_FRAME, scrolling_enterFrameHandler, false, 0, true);
-			(target as DisplayObject).stage.addEventListener(MouseEvent.MOUSE_UP, onMouseUp, false, 0, true);
+			point.x = hostComponent.mouseX;
+			point.y = hostComponent.mouseY;
+			hostComponent.removeEventListener(Event.ENTER_FRAME, animation_enterFrameHandler, false);
+			hostComponent.addEventListener(Event.ENTER_FRAME, scrolling_enterFrameHandler, false, 0, true);
+			hostComponent.stage.addEventListener(MouseEvent.MOUSE_UP, onMouseUp, false, 0, true);
 			drag = 0.95;
 		}
 		
 		private function onMouseUp(event:MouseEvent):void {
-			speed.x = point.x - (target as DisplayObject).mouseX;
-			speed.y = point.y - (target as DisplayObject).mouseY;
-			point.x = (target as DisplayObject).mouseX;
-			point.y = (target as DisplayObject).mouseY;
+			speed.x = point.x - hostComponent.mouseX;
+			speed.y = point.y - hostComponent.mouseY;
+			point.x = hostComponent.mouseX;
+			point.y = hostComponent.mouseY;
 			//(target as DisplayObject).removeEventListener(MouseEvent.MOUSE_MOVE, scrolling_enterFrameHandler, false);
-			(target as DisplayObject).removeEventListener(Event.ENTER_FRAME, scrolling_enterFrameHandler, false);
-			(target as DisplayObject).stage.removeEventListener(MouseEvent.MOUSE_UP, onMouseUp, false);
-			(target as DisplayObject).addEventListener(Event.ENTER_FRAME, animation_enterFrameHandler, false, 0, true);
+			hostComponent.removeEventListener(Event.ENTER_FRAME, scrolling_enterFrameHandler, false);
+			hostComponent.stage.removeEventListener(MouseEvent.MOUSE_UP, onMouseUp, false);
+			hostComponent.addEventListener(Event.ENTER_FRAME, animation_enterFrameHandler, false, 0, true);
 		}
 		
 		private function scrolling_enterFrameHandler(event:Event):void {
-			speed.x = point.x - (target as DisplayObject).mouseX;
-			speed.y = point.y - (target as DisplayObject).mouseY;
-			point.x = (target as DisplayObject).mouseX;
-			point.y = (target as DisplayObject).mouseY;
+			speed.x = point.x - hostComponent.mouseX;
+			speed.y = point.y - hostComponent.mouseY;
+			point.x = hostComponent.mouseX;
+			point.y = hostComponent.mouseY;
 			updatePositions();
 		}
 		
@@ -80,20 +85,20 @@ package reflex.behaviors
 			speed.y = speed.y * drag;
 			drag -= 0.005;
 			if(drag < 0.1) {
-				(target as DisplayObject).removeEventListener(Event.ENTER_FRAME, animation_enterFrameHandler, false);
+				hostComponent.removeEventListener(Event.ENTER_FRAME, animation_enterFrameHandler, false);
 			}
 			
 		}
 		
 		private function updatePositions():void {
 			if(horizontalPosition && horizontalControl) {
-				var percentX:Number = speed.x/(container.measured.width-(target as Object).height);
+				var percentX:Number = speed.x/(container.measured.width-hostComponent.height);
 				var potentialX:Number = percentX*(horizontalPosition.maximum - horizontalPosition.minimum);
 				var px:Number = horizontalPosition.value + potentialX;
 				horizontalPosition.value = Math.max(horizontalPosition.minimum, Math.min(horizontalPosition.maximum, px));
 			}
 			if(verticalPosition && verticalControl) {
-				var percentY:Number = speed.y/(container.measured.height-(target as Object).height);
+				var percentY:Number = speed.y/(container.measured.height-hostComponent.height);
 				var potentialY:Number = percentY*(verticalPosition.maximum - verticalPosition.minimum);
 				var py:Number = verticalPosition.value + potentialY;
 				verticalPosition.value = Math.max(verticalPosition.minimum, Math.min(verticalPosition.maximum, py));
