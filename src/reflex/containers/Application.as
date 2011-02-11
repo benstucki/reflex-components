@@ -11,6 +11,7 @@ package reflex.containers
 	import flash.ui.ContextMenuItem;
 	
 	import reflex.binding.DataChange;
+	import reflex.invalidation.Invalidation;
 	import reflex.layouts.BasicLayout;
 	
 	
@@ -32,7 +33,7 @@ package reflex.containers
 			DataChange.change(this, "backgroundColor", _backgroundColor, _backgroundColor = value);
 		}
 		
-		public var viewSourceURL:String;
+		//public var viewSourceURL:String;
 		
 		public function Application()
 		{
@@ -43,11 +44,11 @@ package reflex.containers
 			}
 			
 			var contextMenu:ContextMenu = new ContextMenu();
-			if(viewSourceURL != null && viewSourceURL != "") {
+			/*if(viewSourceURL != null && viewSourceURL != "") {
 				var viewSourceCMI:ContextMenuItem = new ContextMenuItem("View Source", true);
 				viewSourceCMI.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, menuItemSelectHandler);
 				contextMenu.customItems.push(viewSourceCMI);
-			}
+			}*/
 			contextMenu.hideBuiltInItems();
 			this.contextMenu = contextMenu;
 			
@@ -59,15 +60,30 @@ package reflex.containers
 		
 		private function onStageResize(event:Event):void
 		{
-			width = stage.stageWidth;
-			height = stage.stageHeight;
-			//setSize(stage.stageWidth, stage.stageHeight);
+			if(isNaN(explicit.width)) { unscaledWidth = stage.stageWidth; }
+			if(isNaN(explicit.height)) { unscaledHeight = stage.stageHeight; }
+			Invalidation.invalidate(this, LAYOUT);
 		}
 		
+		override protected function onMeasure(event:Event):void {
+			// no measurement in Application
+			// the compiler gives us root styles like this. yay?
+			if(styleDeclaration.defaultFactory != null) {
+				var f:Function = styleDeclaration.defaultFactory;
+				var t:* = f.apply(style);
+				styleDeclaration.defaultFactory = null
+			}
+		}
+		
+		override public function setSize(width:Number, height:Number):void {
+			// no measurement in application
+		}
+		
+		/*
 		private function menuItemSelectHandler(event:ContextMenuEvent):void {
 			var request:URLRequest = new URLRequest(viewSourceURL);
 			navigateToURL(request, "_blank");
 		}
-		
+		*/
 	}
 }

@@ -6,7 +6,24 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[import flash.events.Event;import flash.display.DisplayObject;addEventListener("widthChange", onResize, false, 0, true);addEventListener("heightChange", onResize, false, 0, true);//radiomark.mouseChildren = false;//radiomark.mouseEnabled = false;function onResize(event:Event):void {	var radiomark:DisplayObject = this.getChildByName("radiomark");	var label:DisplayObject = this.getChildByName("label");	radiomark.y = height/2 - radiomark.height/2;	label.x = 4;	label.y = height/2 - label.height/2 + 4;	label.width = width - 50;}stop();]]></script>
+                <script><![CDATA[import flash.events.Event;
+import flash.display.DisplayObject;
+
+addEventListener("widthChange", onResize, false, 0, true);
+addEventListener("heightChange", onResize, false, 0, true);
+//radiomark.mouseChildren = false;
+//radiomark.mouseEnabled = false;
+
+function onResize(event:Event):void {
+	var radiomark:DisplayObject = this.getChildByName("radiomark");
+	var label:DisplayObject = this.getChildByName("label");
+	radiomark.y = height/2 - radiomark.height/2;
+	label.x = 4;
+	label.y = height/2 - label.height/2 + 4;
+	label.width = width - 50;
+}
+
+stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>

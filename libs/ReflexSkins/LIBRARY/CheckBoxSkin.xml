@@ -2,11 +2,29 @@
   <timeline>
     <DOMTimeline name="CheckBoxSkin">
       <layers>
-        <DOMLayer name="actions" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="actions" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
-                <script><![CDATA[import flash.events.Event;import flash.display.DisplayObject;addEventListener("widthChange", onResize, false, 0, true);addEventListener("heightChange", onResize, false, 0, true);//checkmark.mouseChildren = false;//checkmark.mouseEnabled = false;function onResize(event:Event):void {	var checkmark:DisplayObject = this.getChildByName("checkmark");	var label:DisplayObject = this.getChildByName("label");	//checkmark.width = checkmark.height = height;	checkmark.y = height/2 - checkmark.height/2;	label.x = 4;	label.y = height/2 - label.height/2 + 4;	label.width = width - 50;}stop();]]></script>
+                <script><![CDATA[import flash.events.Event;
+import flash.display.DisplayObject;
+
+addEventListener("widthChange", onResize, false, 0, true);
+addEventListener("heightChange", onResize, false, 0, true);
+//checkmark.mouseChildren = false;
+//checkmark.mouseEnabled = false;
+
+function onResize(event:Event):void {
+	var checkmark:DisplayObject = this.getChildByName("checkmark");
+	var label:DisplayObject = this.getChildByName("label");
+	//checkmark.width = checkmark.height = height;
+	checkmark.y = height/2 - checkmark.height/2;
+	label.x = 4;
+	label.y = height/2 - label.height/2 + 4;
+	label.width = width - 50;
+}
+
+stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -33,11 +51,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="checkmark" color="#FF800A" autoNamed="false">
+        <DOMLayer name="checkmark" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Checkmark" name="checkmark" centerPoint3DX="180" centerPoint3DY="15">
+                <DOMSymbolInstance libraryItemName="Checkmark" name="checkmark" selected="true" centerPoint3DX="180" centerPoint3DY="15">
                   <matrix>
                     <Matrix tx="165"/>
                   </matrix>

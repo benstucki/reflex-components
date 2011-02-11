@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Checkmark" itemID="4caa4b02-000003b7" sourceLibraryItemHRef="Symbol 1" scaleGridLeft="5" scaleGridRight="40" scaleGridTop="4" scaleGridBottom="39" lastModified="1290638185" lastUniqueIdentifier="4">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Checkmark" itemID="4caa4b02-000003b7" sourceLibraryItemHRef="Symbol 1" scaleGridLeft="5" scaleGridRight="40" scaleGridTop="4" scaleGridBottom="39" lastModified="1297369374" lastUniqueIdentifier="4">
   <timeline>
     <DOMTimeline name="Checkmark">
       <layers>
-        <DOMLayer name="actions" color="#9933CC" autoNamed="false">
+        <DOMLayer name="actions" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" name="up" labelType="name" keyMode="9728">
               <Actionscript>
@@ -22,19 +22,19 @@
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="3" name="selectedUp" labelType="name" keyMode="9728">
+            <DOMFrame index="3" name="upAndSelected" labelType="name" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="4" name="selectedOver" labelType="name" keyMode="9728">
+            <DOMFrame index="4" name="overAndSelected" labelType="name" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="5" name="selectedDown" labelType="name" keyMode="9728">
+            <DOMFrame index="5" name="downAndSelected" labelType="name" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
@@ -42,7 +42,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="checkmark" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="checkmark" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
               <elements>
@@ -58,7 +58,7 @@
             </DOMFrame>
             <DOMFrame index="2" duration="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="CheckGreen" name="" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="CheckGreen" name="" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix tx="7.4" ty="10"/>
                   </matrix>

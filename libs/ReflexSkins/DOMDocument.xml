@@ -399,6 +399,12 @@
      </extendedSwatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="12499" publishTime="1297388600"/>
+          <PublishItem publishSize="12505" publishTime="1297387433"/>
+          <PublishItem publishSize="12522" publishTime="1297387162"/>
+          <PublishItem publishSize="12461" publishTime="1297369620"/>
+          <PublishItem publishSize="12460" publishTime="1297369597"/>
+          <PublishItem publishSize="12461" publishTime="1297369386"/>
           <PublishItem publishSize="4841" publishTime="1290653774"/>
           <PublishItem publishSize="4773" publishTime="1290646039"/>
           <PublishItem publishSize="4780" publishTime="1290645983"/>
@@ -413,11 +419,5 @@
           <PublishItem publishSize="4515" publishTime="1290642076"/>
           <PublishItem publishSize="4520" publishTime="1290642031"/>
           <PublishItem publishSize="4506" publishTime="1290641991"/>
-          <PublishItem publishSize="4511" publishTime="1290641686"/>
-          <PublishItem publishSize="4653" publishTime="1290638231"/>
-          <PublishItem publishSize="4737" publishTime="1290637968"/>
-          <PublishItem publishSize="4614" publishTime="1290637115"/>
-          <PublishItem publishSize="4702" publishTime="1290632567"/>
-          <PublishItem publishSize="4700" publishTime="1290632509"/>
      </publishHistory>
 </DOMDocument>
