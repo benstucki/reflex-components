@@ -17,6 +17,9 @@
 	
 	<component id="Scroller" class="reflex.components.Scroller" />
 	
+	<component id="TextInput" class="reflex.components.TextInput" />
+	<component id="TextArea" class="reflex.components.TextArea" />
+	
 	<!-- containers -->
 	<component id="Application" class="reflex.containers.Application"/>
 	<component id="Group" class="reflex.containers.Group" />
@@ -25,6 +28,7 @@
 	
 	<!-- behaviors -->
 	<component id="TouchScrollBehavior" class="reflex.behaviors.TouchScrollBehavior" />
+	
 	
 	<!-- skins -->
 	<component id="ListSkin" class="reflex.skins.ListSkin"/>
