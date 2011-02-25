@@ -49,7 +49,7 @@ package reflex.behaviors
 			speed = new Point();
 		}
 		
-		[EventListener(type="mouseDown", target="target")]
+		[EventListener(event="mouseDown", target="target")]
 		public function onMouseDown(event:MouseEvent):void {
 			point.x = hostComponent.mouseX;
 			point.y = hostComponent.mouseY;

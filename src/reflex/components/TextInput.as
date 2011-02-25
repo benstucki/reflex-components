@@ -20,8 +20,8 @@ package reflex.components
 		{
 			super();
 			this.text = text;
-			skin = new TextInputSkin();;
-			Bind.addBinding(this, "skin.textField.text", this, "text", false);
+			skin = new TextInputSkin();
+			Bind.addBinding(this, "skin.textField.text", this, "text", true);
 			Bind.addBinding(this, "skin.currentState", this, "currentState", false);
 		}
 		
