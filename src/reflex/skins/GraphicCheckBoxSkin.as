@@ -17,50 +17,58 @@ package reflex.skins
 		{
 			super();
 			labelDisplay = new Label();
-			labelDisplay.style = "left: 10; right: 10; top: 5; bottom: 5;";
+			labelDisplay.color = 0xFFFFFF;
+			labelDisplay.fontFamily = "sans-serif";
+			labelDisplay.fontSize = 24;
+			labelDisplay.style = "left: 37; right: 0; top: 0; bottom: 0;";
 			layout = new BasicLayout();
 			content = [labelDisplay];
 		}
 		
 		override protected function render(currentState:String):void {
 			graphics.clear();
+			graphics.lineStyle(0,0,0);
+			graphics.beginFill(0, 0);
+			graphics.drawRect(0, 0, unscaledWidth, unscaledHeight);
+			graphics.endFill();
+			
 			switch(currentState) {
 				case "up":
 					renderUp();
 					break;
 				case "over":
-					renderOver();
-					break;
-				case "down":
-					renderDown();
-					break;
-				case "upAndSelected":
 					renderUp();
 					break;
+				case "down":
+					renderUp();
+					break;
+				case "upAndSelected":
+					renderUpAndSelected();
+					break;
 				case "overAndSelected":
-					renderOver();
+					renderUpAndSelected();
 					break;
 				case "downAndSelected":
-					renderDown();
+					renderUpAndSelected();
+					break;
+				default:
+					renderUp();
 					break;
 			}
 		}
 		
 		private function renderUp():void {
 			graphics.beginFill(0xFFFFFF, 1);
-			graphics.drawRect(0, 0, width, height);
+			graphics.drawRect(0, unscaledHeight/2-15, 30, 30);
 			graphics.endFill();
 		}
 		
-		private function renderOver():void {
-			graphics.beginFill(0xFF0000, 1);
-			graphics.drawRect(0, 0, width, height);
+		private function renderUpAndSelected():void {
+			graphics.beginFill(0xFFFFFF, 1);
+			graphics.drawRect(0, unscaledHeight/2-15, 30, 30);
 			graphics.endFill();
-		}
-		
-		private function renderDown():void {
-			graphics.beginFill(0x00FF00, 1);
-			graphics.drawRect(0, 0, width, height);
+			graphics.beginFill(0x1E1E1E, 1);
+			graphics.drawRect(7, unscaledHeight/2-8, 16, 16);
 			graphics.endFill();
 		}
 		

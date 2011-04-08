@@ -9,6 +9,7 @@ package reflex.components
 	import reflex.behaviors.ButtonBehavior;
 	import reflex.behaviors.SelectBehavior;
 	import reflex.binding.Bind;
+	import reflex.skins.GraphicListItemSkin;
 	
 	/**
 	 * @alpha
@@ -19,12 +20,11 @@ package reflex.components
 		public function ListItem()
 		{
 			super();
-			skin = new ListItemSkin();
-			//behaviors.addItem(new MovieClipSkinBehavior(this));
+			skin = new GraphicListItemSkin();
 			behaviors.addItem(new ButtonBehavior(this));
 			behaviors.addItem(new SelectBehavior(this));
-			Bind.addBinding(this, "skin.label.text", this, "data.label");
-			Bind.addBinding(this, "skin.label.text", this, "data.name");
+			Bind.addBinding(this, "skin.labelDisplay.text", this, "data.label");
+			Bind.addBinding(this, "skin.labelDisplay.text", this, "data.name");
 			Bind.addBinding(this, "skin.currentState", this, "currentState", false);
 			measured.width = 210;
 			measured.height = 64;
