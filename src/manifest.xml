@@ -1,36 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <componentPackage>
 	
-	<!-- components -->
-	<component id="Button" class="reflex.components.Button" />
-	<component id="CheckBox" class="reflex.components.CheckBox" />
-	<component id="RadioButton" class="reflex.components.RadioButton" />
-	
-	<component id="HSlider" class="reflex.components.HSlider" />
-	<component id="VSlider" class="reflex.components.VSlider" />
-	<component id="Stepper" class="reflex.components.Stepper" />
-	<component id="HScrollBar" class="reflex.components.HScrollBar" />
-	<component id="VScrollBar" class="reflex.components.VScrollBar" />
-	
-	<component id="List" class="reflex.components.List" />
-	<component id="ListItem" class="reflex.components.ListItem"/>
-	
-	<component id="Scroller" class="reflex.components.Scroller" />
-	
-	<component id="TextInput" class="reflex.components.TextInput" />
-	<component id="TextArea" class="reflex.components.TextArea" />
-	
-	<!-- containers -->
-	<component id="Application" class="reflex.containers.Application"/>
-	<component id="Group" class="reflex.containers.Group" />
-	<component id="HGroup" class="reflex.containers.HGroup"/>
-	<component id="VGroup" class="reflex.containers.VGroup"/>
-	
-	<!-- behaviors -->
-	<component id="TouchScrollBehavior" class="reflex.behaviors.TouchScrollBehavior" />
-	
-	
-	<!-- skins -->
-	<component id="ListSkin" class="reflex.skins.ListSkin"/>
-	
 </componentPackage>
